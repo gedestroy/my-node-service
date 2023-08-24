@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>service</artifactId>
+        <groupId>ch.post.it.paisa.service</groupId>
+        <!-- Caution: when changing the parent version number, also change the
+            platform.version below -->
+        <version>03.06.14.00</version>
+    </parent>
+
+    <groupId>ch.post.it.paisa.hooli</groupId>
+    <artifactId>hooli</artifactId>
+    <version>02.00.10.01-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <scm>
+    	<connection>scm:git:https://gitit.post.ch/scm/isa/hooli/</connection>
+    	<developerConnection>scm:git:https://gitit.post.ch/scm/isa/hooli/</developerConnection>
+    	<url>https://gitit.post.ch/scm/isa/hooli/</url>
+    </scm>
+    <properties>
+        <!-- ISA related properties -->
+        <service.name>hooli</service.name>
+        <service.port>9106</service.port>
+        <!-- Caution: when changing the platform version number, also change the parent version above -->
+        <platform.version>03.06.14.00</platform.version>
+
+        <!-- FIS APIs-->
+        <fis-control.api.version>00.00.05.00</fis-control.api.version>
+        <fis-masterdata.version>03.00.08.00</fis-masterdata.version>
+        <common-server.api.version>02.01.00.02</common-server.api.version>
+
+        <!-- NON FIS APIs-->
+        <infotainment-visualization.api.version>01.19.00.06</infotainment-visualization.api.version>
+        <vehicle-setup.api.version>01.09.00.00</vehicle-setup.api.version>
+
+        <!-- Testing libraries dependencies -->
+        <awaitility4.version>4.2.0</awaitility4.version>
+
+        <!-- webjars dependencies -->
+        <angularjs-version>1.5.8</angularjs-version>
+
+        <webjars.angularjs.version>${angularjs-version}</webjars.angularjs.version>
+        <webjars.angularjs.jquery>2.1.3</webjars.angularjs.jquery>
+        <webjars.momentjs>2.29.4</webjars.momentjs>
+        <webjars.angular.ui-router>1.0.30</webjars.angular.ui-router>
+        <webjars.server-side-validation.version>00.01.00.00</webjars.server-side-validation.version>
+        <webjars.gateleen-hook-js.version>2.0.1</webjars.gateleen-hook-js.version>
+
+        <!-- Tools -->
+        <angular-router.version>0.5.3</angular-router.version>
+        <commons-logging.version>1.1.1</commons-logging.version>
+
+        <source.format.apply.phase>compile</source.format.apply.phase>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- PAISA Platform -->
+            <dependency>
+                <groupId>ch.post.it.paisa.alice</groupId>
+                <artifactId>alice-service-config-core</artifactId>
+                <version>${platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.post.it.paisa.alice</groupId>
+                <artifactId>alice-service-domain-core</artifactId>
+                <version>${platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.post.it.paisa.alice</groupId>
+                <artifactId>alice-service-process-core</artifactId>
+                <version>${platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.post.it.paisa.alice</groupId>
+                <artifactId>alice-service-web-core</artifactId>
+                <version>${platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.post.it.paisa.fis</groupId>
+                <artifactId>fis-masterdata-media</artifactId>
+                <version>${fis-masterdata.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.post.it.paisa.api</groupId>
+                <artifactId>fis-control-api</artifactId>
+                <version>${fis-control.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.post.it.paisa.alice</groupId>
+                <artifactId>alice-service-test-core</artifactId>
+                <version>${platform.version}</version>
+            </dependency>
+
+            <!-- API's -->
+            <dependency>
+                <groupId>ch.post.it.paisa.api</groupId>
+                <artifactId>paisa-common-server-api</artifactId>
+                <version>${common-server.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.post.it.paisa.api</groupId>
+                <artifactId>infotainment-visualization-api</artifactId>
+                <version>${infotainment-visualization.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.post.it.paisa.api</groupId>
+                <artifactId>vehicle-setup-api</artifactId>
+                <version>${vehicle-setup.api.version}</version>
+            </dependency>
+
+            <!-- Testing -->
+
+            <dependency>
+                <groupId>org.awaitility</groupId>
+                <artifactId>awaitility</artifactId>
+                <version>${awaitility4.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-joda</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <!-- webjars dependencies -->
+            <dependency>
+                <groupId>org.swisspush.gateleen</groupId>
+                <artifactId>gateleen-hook-js</artifactId>
+                <version>${webjars.gateleen-hook-js.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>angularjs</artifactId>
+                <version>${webjars.angularjs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>momentjs</artifactId>
+                <version>${webjars.momentjs}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>angular-ui-router</artifactId>
+                <version>${webjars.angular.ui-router}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>angular-router</artifactId>
+                <version>${angular-router.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>hooli-web</module>
+        <module>hooli-test</module>
+    </modules>
+</project>
