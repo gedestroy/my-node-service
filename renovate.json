@@ -2,14 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ],
-  "packageRules": [
-    {
-      "matchDatasources": ["maven"],
-      "registryUrls": [
-        "https://artifactory.tools.post.ch/artifactory/libs-release",
-        "https://artifactory.tools.post.ch/artifactory/remote-repos"
-      ]
-    }
   ]
 }
