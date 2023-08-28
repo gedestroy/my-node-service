@@ -51,7 +51,7 @@
     "@popperjs/core": "2.11.8",
     "@types/jasmine": "4.3.5",
     "@types/jasminewd2": "2.0.10",
-    "@types/node": "20.4.6",
+    "@types/node": "20.5.7",
     "@typescript-eslint/eslint-plugin": "6.2.1",
     "@typescript-eslint/parser": "6.2.1",
     "eslint": "8.46.0",
