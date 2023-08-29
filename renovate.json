@@ -12,5 +12,8 @@
         "https://artifactory.tools.post.ch/artifactory/remote-repos"
       ]
     }
-  ]
+  ],
+  "jenkins": {
+    "fileMatch": "Jenkinsfile"
+  }
 }
