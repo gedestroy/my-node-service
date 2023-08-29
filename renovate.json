@@ -1,17 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    ":disableDependencyDashboard",
-    ":semanticPrefixFixDepsChoreOthers",
-    ":ignoreModulesAndTests",
-    ":combinePatchMinorReleases",
-    ":prHourlyLimit2",
-    ":prConcurrentLimit20",
-    ":preserveSemverRanges",
-    "group:recommended",
-    "group:allNonMajor",
-    "workarounds:all",
-    "schedule:earlyMondays"
+    "config:base"
   ],
   "packageRules": [
     {
