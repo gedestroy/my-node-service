@@ -5,12 +5,22 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^Jenkinsfile$"],
+      "fileMatch": [
+        "^Jenkinsfile$"
+      ],
       "matchStrings": [
         "[']*(?<depName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "regex"
+      ],
+      "automerge": true
     }
   ]
 }
