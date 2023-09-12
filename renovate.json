@@ -18,7 +18,7 @@
     {
       "automerge": true,
       "extends": [
-        "packages:@swisspost\\/design-system-intranet-header"
+        "packages:\\@swisspost\\/design-system-intranet-header"
       ]
     }
   ]
