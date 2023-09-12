@@ -7,7 +7,7 @@
     {
       "fileMatch": ["^Jenkinsfile$"],
       "matchStrings": [
-        "[']*(?<depName>[a-z0-9-]+)[']*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
+        "[']*(?<depName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
