@@ -5,7 +5,10 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["maven","jenkins"],
+      "matchDatasources": [
+        "maven",
+        "jenkins"
+      ],
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/swisspost",
         "https://artifactory.tools.post.ch/artifactory/libs-release",
@@ -13,13 +16,13 @@
       ]
     }
   ],
-  "regexManagers": [
-    {
-      "fileMatch": ["^Jenkinsfile$"],
-      "matchStrings": [
-        "[']*(?<depName>[a-z0-9-]+)[ ']*:[ ]*\\[version[ ]*:[ ]*,'(?<currentValue>[a-z0-9.-]+)',\\]"
-      ],
-      "datasourceTemplate": "serviceBuildPipeline"
-    }
-  ]
+  "jenkins": {
+    "fileMatch": [
+      "^Jenkinsfile$"
+    ],
+    "matchStrings": [
+      "[']*(?<depName>[a-z0-9-]+)[ ']*:[ ]*\\[version[ ]*:[ ]*,'(?<currentValue>[a-z0-9.-]+)',\\]"
+    ],
+    "datasourceTemplate": "services"
+  }
 }
