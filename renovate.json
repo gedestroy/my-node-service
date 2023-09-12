@@ -17,8 +17,8 @@
   "packageRules": [
     {
       "automerge": true,
-      "extends": [
-        "packages:jasmine-core"
+      "matchPackageNames": [
+        "jasmine-core"
       ]
     }
   ]
