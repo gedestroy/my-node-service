@@ -17,11 +17,10 @@ serviceBuildPipeline([
             .withInstances([instances: [
                     vehicleInstance: [
                             services: [
-                                    platform: [version: '%release%'],
-                                    eagle   : [version: '%release%'],
+                                    platform: [version: '03.06.14.00'],
+                                    eagle   : [version: '02.01.16.00'],
                                     'data-fis-17': [version: '00.35.09.08'],
-                                    'data-fis-3': [version: '00.35.09.10'],
-                                    hooli: [version: '%currentBranch%']
+                                    'data-fis-3': [version: '00.35.09.10']
                             ]
                     ]
             ]
