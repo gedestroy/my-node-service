@@ -17,7 +17,7 @@
     {
       "fileMatch": ["^Jenkinsfile$"],
       "matchStrings": [
-        "'(?<serviceName>[a-z0-9-]+)': \\[version: '(?<version>[a-z0-9.]+)'\\]"
+        "'(?<depName>[a-z0-9-]+)': \\[version: '(?<currentValue>[a-z0-9.]+)'\\]"
       ],
       "datasourceTemplate": "services",
       "versioningTemplate": "services"
