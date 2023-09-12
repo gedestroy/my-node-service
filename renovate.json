@@ -3,24 +3,11 @@
   "extends": [
     "config:base"
   ],
-  "packageRules": [
-    {
-      "matchDatasources": [
-        "maven",
-        "jenkins"
-      ],
-      "registryUrls": [
-        "https://artifactory.tools.post.ch/artifactory/swisspost",
-        "https://artifactory.tools.post.ch/artifactory/libs-release",
-        "https://artifactory.tools.post.ch/artifactory/remote-repos"
-      ]
-    }
-  ],
   "regexManagers": [
     {
       "fileMatch": ["^Jenkinsfile$"],
       "matchStrings": [
-        "'(?<depName>[a-z0-9-]+)': \\[version: '(?<currentValue>[a-z0-9.]+)'\\]"
+        "[']*(?<depName>[a-z0-9-']+)[']*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
