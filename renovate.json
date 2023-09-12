@@ -11,14 +11,12 @@
       "matchStrings": [
         "[']*(?<depName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "docker"
+      "datasourceTemplate": "jenkins"
     }
   ],
   "packageRules": [
     {
       "matchDatasources": [
-        "regex",
         "npm"
       ],
       "automerge": true
