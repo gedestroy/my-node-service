@@ -18,14 +18,11 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": [
-        "^Jenkinsfile$"
-      ],
+      "fileMatch": ["^Jenkinsfile$"],
       "matchStrings": [
-        "[']*(?<depName>[a-z0-9-]+)[ ']*:[ ]*\\[version[ ]*:[ ]*,'(?<currentValue>[a-z0-9.-]+)',\\]"
+        "'(?<depName>[a-z0-9-]+)': \\[version: '(?<currentValue>[a-z0-9.]+)'\\]"
       ],
-      "datasourceTemplate": "generic",
-      "registryUrlTemplate": "https://artifactory.tools.post.ch/artifactory/libs-release"
-    }
-  ]
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    },
 }
