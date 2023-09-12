@@ -18,7 +18,8 @@
   "packageRules": [
     {
       "matchDatasources": [
-        "regex"
+        "regex",
+        "npm"
       ],
       "automerge": true
     }
