@@ -16,10 +16,10 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "automerge": true
+      "automerge": true,
+      "extends": [
+        "packages:@swisspost/design-system-intranet-header"
+      ]
     }
   ]
 }
