@@ -13,7 +13,14 @@
       ]
     }
   ],
-  "jenkins": {
-    "fileMatch": "^Jenkinsfile"
-  }
+  "regexManagers": [
+    {
+      "fileMatch": ["^Jenkinsfile$"],
+      "matchStrings": [
+        "'(?<serviceName>[a-z0-9-]+)',: [version: '(?<currentValue>[a-z0-9.-]+)']"
+      ],
+      "datasourceTemplate": "services",
+      "versioningTemplate": "services"
+    }
+  ]
 }
