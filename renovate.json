@@ -3,6 +3,9 @@
   "extends": [
     "config:base"
   ],
+  "npm": {
+    "automerge": true
+  },
   "regexManagers": [
     {
       "fileMatch": [
@@ -12,14 +15,6 @@
         "[']*(?<depName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
       "datasourceTemplate": "docker"
-    }
-  ],
-  "packageRules": [
-    {
-      "automerge": true,
-      "matchPackageNames": [
-        "jasmine-core"
-      ]
     }
   ]
 }
