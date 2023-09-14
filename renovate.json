@@ -1,11 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":automergeMajor"
   ],
-  "pin": {
-    "automerge": true
-  },
   "regexManagers": [
     {
       "fileMatch": [
