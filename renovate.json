@@ -1,19 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    ":disableDependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
     ":combinePatchMinorReleases",
-    ":prHourlyLimit2",
     ":prConcurrentLimit20",
     ":preserveSemverRanges",
-    ":automergeMajor",
     "group:recommended",
     "group:allNonMajor",
     "workarounds:all",
     "schedule:earlyMondays"
   ],
+  "npm": {
+    "automerge": true
+  },
   "regexManagers": [
     {
       "fileMatch": [
