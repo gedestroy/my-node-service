@@ -3,7 +3,7 @@
   "extends": [
     "config:base"
   ],
-  "npm": {
+  "pin": {
     "automerge": true
   },
   "regexManagers": [
@@ -16,8 +16,5 @@
       ],
       "datasourceTemplate": "docker"
     }
-  ],
-  "regex": {
-    "automerge": true
-  }
+  ]
 }
