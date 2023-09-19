@@ -3,9 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "npm": {
-    "automerge": true
-  },
   "regexManagers": [
     {
       "fileMatch": [
@@ -14,7 +11,10 @@
       "matchStrings": [
         "[']*(?<depName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
-      "datasourceTemplate": "docker"
+      "datasourceTemplate": "npm"
     }
-  ]
+  ],
+  "regex": {
+    "automerge": true
+  }
 }

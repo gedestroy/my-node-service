@@ -163,9 +163,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <modules>
-        <module>hooli-web</module>
-        <module>hooli-test</module>
-    </modules>
 </project>
