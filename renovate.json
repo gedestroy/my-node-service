@@ -15,7 +15,7 @@
       ],
       "datasourceTemplate": "docker",
       "description": "Jenkins file service version",
-      "depNameTemplate": "ch.post.it.paisa.{{serviceName}}"
+      "depNameTemplate": "ch.post.it.paisa.{{serviceName}}:{{serviceName}}"
     }
   ],
   "regex": {

@@ -52,6 +52,7 @@
         <commons-logging.version>1.1.1</commons-logging.version>
 
         <source.format.apply.phase>compile</source.format.apply.phase>
+        <slarti-test.version>03.14.19.00</slarti-test.version>
 
     </properties>
 
@@ -133,6 +134,13 @@
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-joda</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>ch.post.it.paisa.slarti</groupId>
+                <artifactId>slarti-test</artifactId>
+                <version>${slarti-test.version}</version>
             </dependency>
 
             <!-- webjars dependencies -->
