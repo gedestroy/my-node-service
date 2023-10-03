@@ -11,7 +11,7 @@
         "^Jenkinsfile$"
       ],
       "matchStrings": [
-        "[']*(?<serviceName>[a-z0-9.-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
+        "[']*(?<serviceName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
       "datasourceTemplate": "docker",
       "description": "Jenkins file service version",
