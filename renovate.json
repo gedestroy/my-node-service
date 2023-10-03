@@ -11,11 +11,11 @@
         "^Jenkinsfile$"
       ],
       "matchStrings": [
-        "[']*(?<serviceName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
+        "[']*(?<depName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
       "datasourceTemplate": "docker",
       "description": "Jenkins file service version",
-      "depNameTemplate": "ch.post.it.paisa.{{serviceName}}:{{serviceName}}"
+      "depNameTemplate": "ch.post.it.paisa.{{depName}}:{{depName}}"
     }
   ],
   "regex": {
