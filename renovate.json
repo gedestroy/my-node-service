@@ -20,5 +20,11 @@
   ],
   "regex": {
     "automerge": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["npm"],
+      "groupName": "Node"
+    }
+  ]
 }
