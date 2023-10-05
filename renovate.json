@@ -13,9 +13,7 @@
       ],
       "datasourceTemplate": "maven",
       "description": "Jenkins file service version",
-      "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}",
-      "groupname": "Jenkins-service",
-      "automerge": true
+      "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}"
     },
     {
       "fileMatch": [
