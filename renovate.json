@@ -22,7 +22,7 @@
         "^Jenkinsfile$"
       ],
       "matchStrings": [
-        "[']*(?<prefix>data)-(?<name>[a-z]+)-(?<planningAreaId>[\\d]+)[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
+        "[']*(?<prefix>data)-(?<name>[^-]+)(-(?<planningAreaId>[\\d]+))[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
       "datasourceTemplate": "masterdata",
       "description": "Jenkins file service version",
