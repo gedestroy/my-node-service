@@ -3,8 +3,10 @@
   "extends": [
     "config:base"
   ],
-  "regexManagers": [
+  "customManagers":
+  [
     {
+      "customType": "regex",
       "fileMatch": [
         "^Jenkinsfile$"
       ],
@@ -16,6 +18,7 @@
       "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}"
     },
     {
+      "customType": "regex",
       "fileMatch": [
         "^Jenkinsfile$"
       ],
