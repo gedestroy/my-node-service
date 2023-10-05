@@ -3,29 +3,28 @@
   "extends": [
     "config:base"
   ],
-  "customManagers":
-  [
+  "regexManagers": [
     {
-      "customType": "regex",
       "fileMatch": [
         "^Jenkinsfile$"
       ],
       "matchStrings": [
         "[']*(?<depName>[a-z]+)[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
-      "datasourceTemplate": "jenkins",
+      "datasourceTemplate": "maven",
       "description": "Jenkins file service version",
-      "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}"
+      "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}",
+      "groupname": "Jenkins-service",
+      "automerge": true
     },
     {
-      "customType": "regex",
       "fileMatch": [
         "^Jenkinsfile$"
       ],
       "matchStrings": [
         "[']*(?<prefix>data)-(?<name>[^-]+)(-(?<planningAreaId>[\\d]+))[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
-      "datasourceTemplate": "masterdata",
+      "datasourceTemplate": "docker",
       "description": "Jenkins file service version",
       "depNameTemplate": "ch.post.it.paisa.masterdata.prod:{{name}}",
       "extractVersionTemplate": "^prod-{{name}}-{{planningAreaId}}-(?<version>[0-9.]+).zip$",
@@ -34,15 +33,14 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["jenkins"],
+      "matchDatasources": ["maven"],
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/libs-release",
         "https://artifactory.tools.post.ch/artifactory/remote-repos"
-      ],
-      "automerge": true
+      ]
     },
     {
-      "matchDatasources": ["masterdata"],
+      "matchPackagePatterns": ["h.post.it.paisa.masterdata.prod"],
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/masterdata-paisa-local/"
       ]
