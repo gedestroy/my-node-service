@@ -26,7 +26,9 @@
       ],
       "datasourceTemplate": "masterdata",
       "description": "Jenkins file service version",
-      "depNameTemplate": "ch.post.it.paisa.masterdata.prod:{{name}}"
+      "depNameTemplate": "ch.post.it.paisa.masterdata.prod:{{name}}",
+      "extractVersionTemplate": "^prod-{{name}}-{{planningAreaId}}-(?<version>[0-9.]+).zip$",
+      "versioningTemplate": "semver"
     }
   ],
   "regex": {
