@@ -35,7 +35,9 @@
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/libs-release",
         "https://artifactory.tools.post.ch/artifactory/remote-repos"
-      ]
+      ],
+      "automerge": true
+
     },
     {
       "matchPackagePatterns": ["h.post.it.paisa.masterdata.prod"],
