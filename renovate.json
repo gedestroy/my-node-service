@@ -14,12 +14,28 @@
       "matchStrings": [
         "[']*(?<depName>[a-z0-9-]+)[' ]*: \\[version: '(?<currentValue>[a-z0-9.-]+)'\\]"
       ],
-      "datasourceTemplate": "docker",
+      "datasourceTemplate": "maven",
       "description": "Jenkins file service version",
-      "depNameTemplate": "ch.post.it.paisa.{{depName}}:{{depName}}"
+      "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}ch.post.it.paisa.{{depName}}:{{depName}}{{/if}}"
     }
   ],
   "regex": {
     "automerge": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["maven"],
+      "registryUrls": [
+        "https://artifactory.tools.post.ch/artifactory/libs-release",
+        "https://artifactory.tools.post.ch/artifactory/remote-repos"
+      ]
+    }
+  ],
+  "ignoreDeps": ["hashicorp/aws"],
+  "hostRules": [
+    {
+      "matchHost": "artifactory.tools.post.ch",
+      "enabled": "true"
+    }
+  ]
 }
