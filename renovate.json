@@ -11,7 +11,7 @@
       "matchStrings": [
         "[']*(?<depName>[a-z]+)[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
-      "datasourceTemplate": "maven",
+      "datasourceTemplate": "jenkins",
       "description": "Jenkins file service version",
       "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}"
     },
@@ -29,19 +29,19 @@
       "versioningTemplate": "semver"
     }
   ],
-  "regex": {
-    "automerge": true
-  },
   "packageRules": [
     {
-      "matchDatasources": ["maven"],
+      "matchDatasources": ["jenkins"],
+      "groupName": "jenkins-service",
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/libs-release",
         "https://artifactory.tools.post.ch/artifactory/remote-repos"
-      ]
+      ],
+      "automerge": true
     },
     {
       "matchDatasources": ["masterdata"],
+      "groupName": "masterdata",
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/masterdata-paisa-local/"
       ]
