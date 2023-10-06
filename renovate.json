@@ -35,9 +35,8 @@
     {
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
-      "matchDepTypes": [
-        "jenkins"
-      ]
+      "matchDepTypes": ["jenkins"],
+      "automerge": true
     },
     {
       "groupName" : "Data",
