@@ -12,7 +12,8 @@
       "matchStrings": [
         "[']*(?<depName>[a-z]+)[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
-      "datasourceTemplate": "jenkins-plugins",
+      "depTypeTemplate": "jenkins",
+      "datasourceTemplate": "maven",
       "description": "Jenkins file service version",
       "depNameTemplate": "ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}"
     },
@@ -33,7 +34,10 @@
   "packageRules": [
     {
       "groupName" : "Jenkins",
-      "matchDatasources": ["jenkins-plugins"],
+      "matchDatasources": ["maven"],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/libs-release",
         "https://artifactory.tools.post.ch/artifactory/remote-repos"
