@@ -13,7 +13,7 @@
         "[']*(?<depName>[a-z]+)[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
       "depTypeTemplate": "jenkins",
-      "datasourceTemplate": "maven",
+      "datasourceTemplate": "npm",
       "description": "Jenkins file service version",
       "depNameTemplate": "{{#if (equals depName 'prettier')}}{{depName}}{{else}}ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}{{/if}}"
     },
@@ -34,7 +34,7 @@
   "packageRules": [
     {
       "groupName" : "Jenkins",
-      "matchDatasources": ["maven"],
+      "matchDatasources": ["npm"],
       "matchDepTypes": [
         "jenkins"
       ]
