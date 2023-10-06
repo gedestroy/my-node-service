@@ -36,7 +36,7 @@
       "groupName" : "Jenkins",
       "matchDatasources": ["maven"],
       "matchDepTypes": [
-        "devDependencies"
+        "jenkins"
       ]
     },
     {
