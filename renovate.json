@@ -1,7 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    "group:allNonMajor",
+    "group:Jenkins"
   ],
   "regexManagers": [
     {
@@ -31,6 +33,7 @@
   ],
   "packageRules": [
     {
+      "groupName" : "Jenkins",
       "matchDatasources": ["jenkins-plugins"],
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/libs-release",
@@ -40,6 +43,8 @@
 
     },
     {
+      "groupName" : "Data",
+      "matchDatasources": ["docker"],
       "matchPackagePatterns": ["h.post.it.paisa.masterdata.prod"],
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/masterdata-paisa-local/"
