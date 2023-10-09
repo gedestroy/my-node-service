@@ -49,7 +49,6 @@
     },
     {
       "groupName" : "Jenkins",
-      "groupSlug": "all",
       "matchDatasources": ["npm"],
       "matchDepTypes": ["jenkins"]
     }
