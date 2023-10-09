@@ -4,8 +4,7 @@
     "config:base",
     "group:allNonMajor",
     "group:recommended",
-    "group:all",
-    ":automergeStableNonMajor"
+    "group:test"
   ],
   "regexManagers": [
     {
@@ -47,15 +46,10 @@
       ]
     },
     {
-      "groupName": "all npm dependencies",
-      "groupSlug": "all",
-      "matchDatasources": ["npm"]
-    },
-    {
+      "extends": "packages:test",
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
-      "matchDepTypes": ["jenkins"],
-      "automerge": true
+      "matchDepTypes": ["jenkins"]
     }
   ]
 }
