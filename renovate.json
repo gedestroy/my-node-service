@@ -42,6 +42,16 @@
       ]
     },
     {
+      "groupName": "all npm dependencies",
+      "groupSlug": "all",
+      "matchDatasources": ["npm"]
+    },
+    {
+      "enable": false,
+      "groupSlug": "all",
+      "matchDepTypes": ["jenkins"]
+    },
+    {
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
       "matchDepTypes": ["jenkins"]
