@@ -45,7 +45,7 @@
         <webjars.momentjs>2.29.4</webjars.momentjs>
         <webjars.angular.ui-router>1.0.30</webjars.angular.ui-router>
         <webjars.server-side-validation.version>00.01.00.00</webjars.server-side-validation.version>
-        <webjars.gateleen-hook-js.version>2.0.1</webjars.gateleen-hook-js.version>
+        <webjars.gateleen-hook-js.version>2.0.2</webjars.gateleen-hook-js.version>
 
         <!-- Tools -->
         <angular-router.version>0.5.3</angular-router.version>
