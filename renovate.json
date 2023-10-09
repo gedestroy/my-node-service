@@ -2,7 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    "group:allNonMajor"
+    "group:allNonMajor",
+    "group:recommended",
+    "group:all"
   ],
   "regexManagers": [
     {
@@ -45,6 +47,11 @@
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/masterdata-paisa-local/"
       ]
+    },
+    {
+      "groupName": "all npm dependencies",
+      "groupSlug": "all",
+      "matchDatasources": ["npm"]
     }
   ]
 }
