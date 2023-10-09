@@ -13,6 +13,7 @@
       "matchStrings": [
         "[']*(?<depName>[a-z]+)[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
+      "depTypeTemplate": "jenkins",
       "datasourceTemplate": "npm",
       "description": "Jenkins file service version"
     },
@@ -40,9 +41,9 @@
       ]
     },
     {
-      "automerge": true,
       "groupName" : "Jenkins",
-      "matchFileNames": ["Jenkinsfile"]
+      "matchFileNames": ["Jenkinsfile"],
+      "automerge": true
     }
   ],
   "platformAutomerge": true
