@@ -49,7 +49,7 @@
     {
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
-      "matchFileNames": ["Jenkinsfile"]
+      "matchDepTypes": ["jenkins"]
     }
   ]
 }
