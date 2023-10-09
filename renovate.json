@@ -3,8 +3,7 @@
   "extends": [
     "config:base",
     "group:allNonMajor",
-    "group:recommended",
-    ":automergeAll"
+    "group:recommended"
   ],
   "regexManagers": [
     {
@@ -41,14 +40,10 @@
       ]
     },
     {
-      "groupName": "all non-major npm dependencies",
-      "groupSlug": "all-minor-patch",
-      "matchDatasources": ["npm"]
-    },
-    {
       "automerge": true,
       "groupName" : "Jenkins",
       "matchFileNames": ["Jenkinsfile"]
     }
-  ]
+  ],
+  "platformAutomerge": true
 }
