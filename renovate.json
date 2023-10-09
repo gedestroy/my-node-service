@@ -3,7 +3,8 @@
   "extends": [
     "config:base",
     "group:allNonMajor",
-    "group:recommended"
+    "group:recommended",
+    ":automergeAll"
   ],
   "regexManagers": [
     {
@@ -45,6 +46,7 @@
       "matchDatasources": ["npm"]
     },
     {
+      "automerge": true,
       "groupName" : "Jenkins",
       "matchFileNames": ["Jenkinsfile"]
     }
