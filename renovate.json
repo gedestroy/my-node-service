@@ -13,7 +13,6 @@
       "matchStrings": [
         "[']*(?<depName>[a-z]+)[' ]*: \\[version: '(?<currentValue>[0-9.]+)'\\]"
       ],
-      "depTypeTemplate": "jenkins",
       "datasourceTemplate": "npm",
       "description": "Jenkins file service version"
     },
@@ -39,11 +38,6 @@
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/masterdata-paisa-local/"
       ]
-    },
-    {
-      "groupName": "all non-major npm dependencies",
-      "groupSlug": "all-minor-patch",
-      "matchDatasources": ["npm"]
     },
     {
       "groupName" : "Jenkins",
