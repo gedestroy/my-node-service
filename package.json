@@ -29,7 +29,7 @@
     "@fortawesome/fontawesome-free": "6.4.2",
     "@ng-bootstrap/ng-bootstrap": "14.2.0",
     "@ngx-translate/core": "14.0.0",
-    "@ngx-translate/http-loader": "7.0.0",
+    "@ngx-translate/http-loader": "8.0.0",
     "@swimlane/ngx-datatable": "20.1.0",
     "@swisspost/design-system-intranet-header": "4.0.8",
     "@swisspost/design-system-styles": "6.4.0",
