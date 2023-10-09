@@ -3,8 +3,7 @@
   "extends": [
     "config:base",
     "group:allNonMajor",
-    "group:recommended",
-    "group:all"
+    "group:recommended"
   ],
   "regexManagers": [
     {
@@ -42,9 +41,8 @@
       ]
     },
     {
-      "groupName": "all npm dependencies",
-      "groupSlug": "all",
-      "matchDatasources": ["npm"]
+      "groupName": "all non-major npm dependencies",
+      "groupSlug": "all-minor-patch"
     },
     {
       "groupName" : "Jenkins",
