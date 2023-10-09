@@ -3,8 +3,7 @@
   "extends": [
     "config:base",
     "group:allNonMajor",
-    "group:recommended",
-    "group:test"
+    "group:recommended"
   ],
   "regexManagers": [
     {
@@ -46,8 +45,8 @@
       ]
     },
     {
-      "extends": "packages:test",
       "groupName" : "Jenkins",
+      "groupSlug": "all-minor-patch",
       "matchDatasources": ["npm"],
       "matchDepTypes": ["jenkins"]
     }
