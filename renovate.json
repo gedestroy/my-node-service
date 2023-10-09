@@ -4,7 +4,8 @@
     "config:base",
     "group:allNonMajor",
     "group:recommended",
-    "group:all"
+    "group:all",
+    ":automergeStableNonMajor"
   ],
   "regexManagers": [
     {
@@ -33,6 +34,10 @@
     }
   ],
   "packageRules": [
+    {
+      "automerge": true,
+      "matchDepTypes": ["jenkins"]
+    },
     {
       "groupName" : "Data",
       "matchDatasources": ["docker"],
