@@ -42,7 +42,8 @@
     },
     {
       "groupName": "all non-major npm dependencies",
-      "groupSlug": "all-minor-patch"
+      "groupSlug": "all-minor-patch",
+      "matchDatasources": ["npm"]
     },
     {
       "groupName" : "Jenkins",
