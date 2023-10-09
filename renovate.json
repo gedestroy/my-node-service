@@ -47,7 +47,7 @@
       "matchDatasources": ["npm"]
     },
     {
-      "enable": false,
+      "enabled": false,
       "groupSlug": "all",
       "matchDepTypes": ["jenkins"]
     },
