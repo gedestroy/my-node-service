@@ -16,8 +16,7 @@
       ],
       "depTypeTemplate": "jenkins",
       "datasourceTemplate": "npm",
-      "description": "Jenkins file service version",
-      "depNameTemplate": "{{#if (equals depName 'prettier')}}{{depName}}{{else}}ch.post.it.paisa{{#if (equals depName 'platform')}}:paisa-{{depName}}{{else}}.{{depName}}:{{depName}}{{/if}}{{/if}}"
+      "description": "Jenkins file service version"
     },
     {
       "fileMatch": [
