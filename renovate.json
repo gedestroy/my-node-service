@@ -45,7 +45,15 @@
     {
       "groupName": "all npm dependencies",
       "groupSlug": "all",
-      "matchDatasources": ["npm"]
+      "matchDatasources": ["npm"],
+      "packageRules": [
+        {
+          "enabled": false,
+          "matchDepTypes": [
+            "jenkins"
+          ]
+        }
+      ]
     },
     {
       "groupName" : "Jenkins",
