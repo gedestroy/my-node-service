@@ -42,24 +42,15 @@
       ]
     },
     {
-      "enabled": false,
-      "matchDatasources": ["npm"],
-      "matchDepTypes": ["jenkins"]
-    },
-    {
       "groupName": "all npm dependencies",
       "groupSlug": "all",
       "matchDatasources": ["npm"]
     },
     {
-      "enabled": true,
-      "matchDatasources": ["npm"],
-      "matchDepTypes": ["jenkins"]
-    },
-    {
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
-      "matchDepTypes": ["jenkins"]
+      "matchDepTypes": ["jenkins"],
+      "automerge": true
     }
   ]
 }
