@@ -3,7 +3,7 @@
   "extends": [
     "config:base",
     "group:all",
-    ":automergeAll"
+    ":automergePatch"
   ],
   "regexManagers": [
     {
@@ -31,11 +31,10 @@
       "versioningTemplate": "semver"
     }
   ],
+  "patch": {
+    "automerge": true
+  },
   "packageRules": [
-    {
-      "automerge": true,
-      "matchDepTypes": ["jenkins"]
-    },
     {
       "groupName" : "Data",
       "matchDatasources": ["docker"],
