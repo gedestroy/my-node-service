@@ -2,8 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    "group:all",
-    ":automergePatch"
+    "group:allNonMajor",
+    "group:recommended",
+    "group:all"
   ],
   "regexManagers": [
     {
@@ -31,9 +32,6 @@
       "versioningTemplate": "semver"
     }
   ],
-  "patch": {
-    "automerge": true
-  },
   "packageRules": [
     {
       "groupName" : "Data",
@@ -44,26 +42,14 @@
       ]
     },
     {
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch",
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ]
-    },
-    {
       "groupName": "all npm dependencies",
       "groupSlug": "all",
       "matchDatasources": ["npm"]
     },
     {
-      "automerge": true,
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
-      "matchDepTypes": ["jenkins"]
+      "matchFileNames": ["Jenkinsfile"]
     }
   ]
 }
