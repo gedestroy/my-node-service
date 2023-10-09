@@ -40,6 +40,17 @@
       ]
     },
     {
+      "groupName": "all non-major npm dependencies",
+      "groupSlug": "all-minor-patch",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
       "matchFileNames": ["Jenkinsfile"]
