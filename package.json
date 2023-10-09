@@ -34,7 +34,7 @@
     "@swisspost/design-system-intranet-header": "4.0.8",
     "@swisspost/design-system-styles": "6.4.0",
     "moment": "2.29.4",
-    "ngx-toastr": "16.2.0",
+    "ngx-toastr": "17.0.2",
     "rxjs": "7.8.1",
     "tslib": "2.6.1",
     "zone.js": "0.13.1"
