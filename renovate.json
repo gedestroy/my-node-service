@@ -43,14 +43,20 @@
       ]
     },
     {
-      "groupName": "all npm dependencies",
+      "groupName": "all dependencies",
       "groupSlug": "all",
-      "matchDatasources": ["npm"]
-    },
-    {
-      "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
-      "matchDepTypes": ["jenkins"]
+      "lockFileMaintenance": {
+        "enabled": false
+      },
+      "packageRules": [
+        {
+          "groupName": "all Jenkins dependencies",
+          "groupSlug": "all",
+          "matchDepTypes": ["jenkins"]
+        }
+      ],
+      "separateMajorMinor": false
     }
   ]
 }
