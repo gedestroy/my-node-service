@@ -35,12 +35,6 @@
   ],
   "packageRules": [
     {
-      "groupName" : "Jenkins",
-      "matchDatasources": ["npm"],
-      "matchDepTypes": ["jenkins"],
-      "automerge": true
-    },
-    {
       "groupName" : "Data",
       "matchDatasources": ["docker"],
       "matchPackagePatterns": ["h.post.it.paisa.masterdata.prod"],
@@ -49,9 +43,10 @@
       ]
     },
     {
-      "groupName": "all npm dependencies",
+      "groupName": "Jenkins",
       "groupSlug": "all",
-      "matchDatasources": ["npm"]
+      "matchDatasources": ["npm"],
+      "matchDepTypes": ["jenkins"]
     }
   ]
 }
