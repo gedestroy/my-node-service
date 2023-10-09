@@ -2,9 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    "group:allNonMajor",
-    "group:recommended",
-    "group:all"
+    "group:all",
+    ":automergeMinor"
   ],
   "regexManagers": [
     {
@@ -62,6 +61,7 @@
       "matchDatasources": ["npm"]
     },
     {
+      "automerge": true,
       "groupName" : "Jenkins",
       "matchDatasources": ["npm"],
       "matchDepTypes": ["jenkins"]
