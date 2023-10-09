@@ -43,7 +43,7 @@
     },
     {
       "enabled": false,
-      "groupSlug": "all",
+      "matchDatasources": ["npm"],
       "matchDepTypes": ["jenkins"]
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "enabled": true,
-      "groupSlug": "all",
+      "matchDatasources": ["npm"],
       "matchDepTypes": ["jenkins"]
     },
     {
