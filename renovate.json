@@ -42,12 +42,17 @@
       ]
     },
     {
+      "enabled": false,
+      "groupSlug": "all",
+      "matchDepTypes": ["jenkins"]
+    },
+    {
       "groupName": "all npm dependencies",
       "groupSlug": "all",
       "matchDatasources": ["npm"]
     },
     {
-      "enabled": false,
+      "enabled": true,
       "groupSlug": "all",
       "matchDepTypes": ["jenkins"]
     },
