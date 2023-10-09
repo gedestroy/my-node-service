@@ -46,17 +46,13 @@
       "groupName": "all dependencies",
       "groupSlug": "all",
       "matchDatasources": ["npm"],
-      "lockFileMaintenance": {
-        "enabled": false
-      },
       "packageRules": [
         {
           "groupName": "all Jenkins dependencies",
           "groupSlug": "all",
           "matchDepTypes": ["jenkins"]
         }
-      ],
-      "separateMajorMinor": false
+      ]
     }
   ]
 }
