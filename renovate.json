@@ -41,19 +41,14 @@
       ]
     },
     {
-      "matchDepTypes": ["jenkins"],
-      "automerge": true
-    },
-    {
       "groupName": "all non-major npm dependencies",
       "groupSlug": "all-minor-patch",
       "matchDatasources": ["npm"]
     },
     {
       "groupName" : "Jenkins",
-      "matchFileNames": ["Jenkinsfile"],
+      "matchDepTypes": ["jenkins"],
       "automerge": true
     }
-  ],
-  "platformAutomerge": true
+  ]
 }
