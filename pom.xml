@@ -35,17 +35,17 @@
         <vehicle-setup.api.version>01.09.00.00</vehicle-setup.api.version>
 
         <!-- Testing libraries dependencies -->
-        <awaitility4.version>4.2.0</awaitility4.version>
+        <awaitility4.version>4.2.2</awaitility4.version>
 
         <!-- webjars dependencies -->
-        <angularjs-version>1.8.2</angularjs-version>
+        <angularjs-version>1.8.3</angularjs-version>
 
         <webjars.angularjs.version>${angularjs-version}</webjars.angularjs.version>
         <webjars.angularjs.jquery>2.1.3</webjars.angularjs.jquery>
-        <webjars.momentjs>2.29.4</webjars.momentjs>
+        <webjars.momentjs>2.30.1</webjars.momentjs>
         <webjars.angular.ui-router>1.0.30</webjars.angular.ui-router>
         <webjars.server-side-validation.version>00.01.00.00</webjars.server-side-validation.version>
-        <webjars.gateleen-hook-js.version>2.0.1</webjars.gateleen-hook-js.version>
+        <webjars.gateleen-hook-js.version>2.1.12</webjars.gateleen-hook-js.version>
 
         <!-- Tools -->
         <angular-router.version>0.5.3</angular-router.version>
