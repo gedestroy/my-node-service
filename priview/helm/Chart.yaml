@@ -18,5 +18,5 @@ dependencies:
     repository: https://artifactory.tools.post.ch/artifactory/helm-paisa-local
   - name: @ngx-translate/http-loader
     version: 7.0.0"
-  - name: angular-router
+  - name: angularjs
     version: 1.5.8
