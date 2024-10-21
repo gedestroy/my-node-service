@@ -16,7 +16,6 @@ dependencies:
     alias: astra
     version: 0.1.22
     repository: https://artifactory.tools.post.ch/artifactory/helm-paisa-local
-  - name: @ngx-translate/http-loader
-    version: 7.0.0"
   - name: angularjs
+    alias: angularjs
     version: 1.5.8
