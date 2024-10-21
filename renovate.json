@@ -55,6 +55,5 @@
       "matchDepTypes": ["jenkins"],
       "automerge": true
     }
-  ],
-  "platformAutomerge": true
+  ]
 }
