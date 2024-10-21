@@ -1,0 +1,18 @@
+apiVersion: v2
+appVersion: "1.0.0"
+name: isa-astra-preview
+description: Umbrella Helm chart for integration tests
+version: 1.0.0
+
+maintainers:
+  - name: Sandro Rudin
+    email: sandro.rudin@post.ch
+
+dependencies:
+  - name: isa-preview
+    version: 0.0.13
+    repository: https://artifactory.tools.post.ch/artifactory/helm-paisa-local
+  - name: isa-service
+    alias: astra
+    version: 0.1.22
+    repository: https://artifactory.tools.post.ch/artifactory/helm-paisa-local

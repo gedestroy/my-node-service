@@ -1,0 +1,11 @@
+forceSync: false
+global:
+  environment: test
+  imageRegistry: docker.tools.post.ch
+isa-preview:
+  isa-houston:
+    houston:
+      version: '02.01.73.00'
+      routes:
+        default:
+          target: {{PullrequestId}}.isa.aws.pnetcloud.ch
