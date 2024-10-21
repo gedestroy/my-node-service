@@ -1,0 +1,24 @@
+apiVersion: kubernetes.post.ch/v1beta1
+kind: SoftwareSystemInstance
+metadata:
+  name: {{PullrequestId}}
+spec:
+  system:
+    name: paisa
+  repository:
+    location: 'https://gitit.post.ch/scm/isa/isa-k8s-preview.git'
+    revision: HEAD
+    path: {{PullrequestId}}
+    helm:
+      valueFiles:
+        - astra-values-preview.yaml
+        - values-preview.yaml
+  owneremail: "sdc-isa@post.ch"
+  support:
+    groups:
+      - name: cn=oe-it123-00215991 ou=oe ou=groups ou=pnet dc=vpost dc=ch
+        context: ArgoCD
+      - name: cn=oe-it123_ext-00215991 ou=oe ou=groups ou=pnet dc=vpost dc=ch
+        context: ArgoCD
+  rbac:
+    enablePodExec: true

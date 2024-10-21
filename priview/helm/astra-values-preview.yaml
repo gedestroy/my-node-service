@@ -1,0 +1,27 @@
+# ISA service
+astra:
+  deployment:
+    imagePullPolicy: Always
+    replicas: 1
+    probes:
+      liveness:
+        initialDelaySeconds: 60
+      readiness:
+        initialDelaySeconds: 60
+    volumes:
+      configProperties:
+        name: astra-config
+        storage:
+          type: configMap
+        configMapKey: configProperties
+        configMapPath: config.properties
+        mount: /data/conf/astra
+  isaService:
+    name: astra
+    version: {{PreviewVersion}}
+    persistentHeapDump: false
+    config:
+      create: true
+    jettyArgs: ""
+    readinessPath: /astra/info
+    livenessPath: /astra/info

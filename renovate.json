@@ -46,6 +46,11 @@
       "matchDatasources": ["npm"]
     },
     {
+      "argocd": {
+        "fileMatch": ["^preview/helm/+\\.yaml$"]
+      }
+    },
+    {
       "groupName" : "Jenkins",
       "matchDepTypes": ["jenkins"],
       "automerge": true
