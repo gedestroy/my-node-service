@@ -5,6 +5,9 @@
     "group:allNonMajor",
     "group:recommended"
   ],
+  "argocd": {
+    "fileMatch": ["^preview/helm/+\\.yaml$"]
+  },
   "regexManagers": [
     {
       "fileMatch": [
@@ -44,11 +47,6 @@
       "groupName": "all non-major npm dependencies",
       "groupSlug": "all-minor-patch",
       "matchDatasources": ["npm"]
-    },
-    {
-      "argocd": {
-        "fileMatch": ["^preview/helm/+\\.yaml$"]
-      }
     },
     {
       "groupName" : "Jenkins",
