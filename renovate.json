@@ -38,7 +38,7 @@
         "^preview/helm/+\\.yaml$"
       ],
       "matchStrings": [
-        "*(?<depName>[a-z]+)*: \\version: '(?<currentValue>[0-9.]+)'",
+        "*(?<depName>[a-z]+)*: \\version: '(?<currentValue>[0-9.]+)'"
       ],
       "depTypeTemplate": "argocd",
       "datasourceTemplate": "helm",
