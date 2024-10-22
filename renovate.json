@@ -6,7 +6,10 @@
     "group:recommended"
   ],
   "argocd": {
-    "fileMatch": ["^preview/++/+\\.yaml$"]
+    "fileMatch": ["^preview/helm/+\\.yaml$"]
+  },
+  "helm-values": {
+    "fileMatch": ["^preview/helm/values-preview.yaml$"]
   },
   "regexManagers": [
     {
@@ -32,16 +35,6 @@
       "depNameTemplate": "ch.post.it.paisa.masterdata.prod:{{name}}",
       "extractVersionTemplate": "^prod-{{name}}-{{planningAreaId}}-(?<version>[0-9.]+).zip$",
       "versioningTemplate": "semver"
-    },
-    {
-      "fileMatch": [
-        "^preview/helm/values-preview.yaml$"
-      ],
-      "matchStrings": [
-        "(?<depName>[a-z]+)[ ]*:[\\n ]*version:[ ]*'(?<currentValue>[0-9.]+)'"
-      ],
-      "depTypeTemplate": "helm",
-      "description": "Jenkins file service version"
     }
   ],
   "packageRules": [
@@ -62,10 +55,6 @@
       "groupName" : "Jenkins",
       "matchDepTypes": ["jenkins"],
       "automerge": true
-    },
-    {
-      "groupName" : "Helm",
-      "matchDepTypes": ["helm"]
     }
   ]
 }
