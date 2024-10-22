@@ -32,6 +32,17 @@
       "depNameTemplate": "ch.post.it.paisa.masterdata.prod:{{name}}",
       "extractVersionTemplate": "^prod-{{name}}-{{planningAreaId}}-(?<version>[0-9.]+).zip$",
       "versioningTemplate": "semver"
+    },
+    {
+      "fileMatch": [
+        "^preview/helm/+\\.yaml$"
+      ],
+      "matchStrings": [
+        "*(?<depName>[a-z]+)*: \\version: '(?<currentValue>[0-9.]+)'",
+      ],
+      "depTypeTemplate": "argocd",
+      "datasourceTemplate": "helm",
+      "description": "Jenkins file service version"
     }
   ],
   "packageRules": [
