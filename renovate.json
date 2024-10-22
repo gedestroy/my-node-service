@@ -38,7 +38,7 @@
         "^preview/helm/values-preview.yaml$"
       ],
       "matchStrings": [
-        "(?<depName>[a-z]+): \n\\version: '(?<currentValue>[0-9.]+)'"
+        "(?<depName>[a-z]+)[ ]*:[\\n ]*version:[ ]*'(?<currentValue>[0-9.]+)'"
       ],
       "depTypeTemplate": "helm",
       "datasourceTemplate": "helm",
