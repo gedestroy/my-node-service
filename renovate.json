@@ -41,7 +41,6 @@
         "(?<depName>[a-z]+)[ ]*:[\\n ]*version:[ ]*'(?<currentValue>[0-9.]+)'"
       ],
       "depTypeTemplate": "helm",
-      "datasourceTemplate": "npm",
       "description": "Jenkins file service version"
     }
   ],
