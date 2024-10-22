@@ -40,7 +40,7 @@
       "matchStrings": [
         "*(?<depName>[a-z]+)*: \\version: '(?<currentValue>[0-9.]+)'"
       ],
-      "depTypeTemplate": "argocd",
+      "depTypeTemplate": "helm",
       "datasourceTemplate": "helm",
       "description": "Jenkins file service version"
     }
