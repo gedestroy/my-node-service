@@ -11,8 +11,8 @@ spec:
     path: {{PullrequestId}}
     helm:
       valueFiles:
-        - astra-preview-values.yaml
-        - preview-values.yaml
+        - astra-values-preview.yaml
+        - values-preview.yaml
   owneremail: "sdc-isa@post.ch"
   support:
     groups:
