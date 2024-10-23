@@ -5,9 +5,6 @@
     "group:allNonMajor",
     "group:recommended"
   ],
-  "helm-values": {
-    "fileMatch": ["^preview/helm/preview-values\\.yaml$"]
-  },
   "regexManagers": [
     {
       "fileMatch": [
