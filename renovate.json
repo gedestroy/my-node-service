@@ -8,6 +8,9 @@
   "argocd": {
     "fileMatch": ["^preview/helm/chart.yaml$"]
   },
+  "helm-values": {
+    "fileMatch": ["(^|/)values-preview\\.ya?ml$"]
+  },
   "regexManagers": [
     {
       "fileMatch": [
