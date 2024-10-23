@@ -6,7 +6,7 @@
     "group:recommended"
   ],
   "argocd": {
-    "fileMatch": ["^preview/helm/.+\\.yaml$"]
+    "fileMatch": ["^preview/helm/chart.yaml$"]
   },
   "regexManagers": [
     {
