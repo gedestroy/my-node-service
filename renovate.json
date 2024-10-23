@@ -5,9 +5,6 @@
     "group:allNonMajor",
     "group:recommended"
   ],
-  "argocd": {
-    "fileMatch": ["^preview/helm/+\\.yaml$"]
-  },
   "helm-values": {
     "fileMatch": ["^preview/helm/preview-values\\.yaml$"]
   },
