@@ -6,7 +6,7 @@
     "group:recommended"
   ],
   "argocd": {
-    "fileMatch": ["^preview/helm/chart.yaml$"]
+    "fileMatch": ["^preview/helm/chart\\.yaml$"]
   },
   "helm-values": {
     "fileMatch": ["(^|/)values-preview\\.ya?ml$"]
