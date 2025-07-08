@@ -38,7 +38,7 @@
     {
       "groupName" : "Data",
       "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["h.post.it.paisa.masterdata.prod"],
+      "matchPackagePatterns": ["ch.post.it.paisa.masterdata.prod"],
       "registryUrls": [
         "https://artifactory.tools.post.ch/artifactory/masterdata-paisa-local/"
       ]
