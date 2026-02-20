@@ -22,7 +22,7 @@ serviceBuildPipeline([
                                     'data-fis-17': [version: '00.35.09.08'],
                                     'data-fis-3': [version: '00.35.09.10'],
                                     prettier: [version: '3.7.4'],
-                                    eslint: [version: '9.39.2']
+                                    eslint: [version: '10.0.1']
                                     hooli: [version: '%currentBranch%']
                             ]
                     ]
